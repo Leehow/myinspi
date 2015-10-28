@@ -1,0 +1,38 @@
+以后一些备注请放在这里！！
+
+
+
+
+我在kern/core/sql_use_new.php是个新文件对sql_use里面的函数根据新数据库的结构进行了重写
+但是直接把配置文件里的内容往里放了，以后改config.php的时候别忘了该这里！！！
+
+
+
+
+
+加两个重要的全局变量
+usr_use::checklogin();                                  //验证用户是否登录
+data_use::register_get('tkid');                         //获取tkid
+data_use::get_usr('userid');                            //获取本用户id
+
+
+
+内容类别输出的时候用散列表加用户id*2的方法加密，最后回到搜索的时候除以2减去用户id得到散列id
+
+
+
+kern 
+    --core  内核文件
+        --class_load.php    简单载入类的一个方法,为了统一全局代码风格
+        --data_use.php      数据进行比较等操作,大部分功能已弃用,仅留存
+        --class_load.php
+        --class_load.php
+        
+    --lib
+    --LeeFramework.php
+modul
+plugIn
+templates
+
+
+
